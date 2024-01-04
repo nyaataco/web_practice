@@ -1,0 +1,39 @@
+// @import url("mobile.css") screen and (max-width: 600px);
+// @import url("desktop.css") screen and (min-width: 601px);
+
+
+h1 {
+    color: red;
+    background: blanchedalmond;
+
+    // 480px以上 スマホ横向き
+    @media(max-width: 480px) {
+        color: blue;
+    }
+
+    // 600px以上 タブレットの縦向き
+    @media (min-width: 600px) {
+        color: green;
+    }
+    
+    // 960px以上 ノートPCなどの小さなPC
+    @media (min-width: 960px) {
+        color: palevioletred;
+    }
+
+    // 1280px以上 デスクトップPC
+    @media (min-width: 1280px) {
+        color: mediumaquamarine;
+    }
+}
+
+
+
+@media (-webkit-min-device-pixcel-ratio: 2),
+(min-resolution: 2dppx) {
+    h1 {
+        color: purple;
+    }
+}
+
+

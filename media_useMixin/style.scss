@@ -1,0 +1,26 @@
+
+@use "mq" as *;
+
+h1 {
+    color: red;
+    background: blanchedalmond;
+        
+    @include mq(sm) {
+        color: blue;
+    }
+
+    @include mq(md) {
+        color: green;
+    }
+
+    @include mq(lg) {
+        color: palevioletred;
+    }
+
+    @include mq(xl) {
+        color: mediumaquamarine;
+    }
+}
+
+
+
